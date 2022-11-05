@@ -1,7 +1,7 @@
 module.exports = {
-  OWNER_IDS: [], // Bot owner ID's
-  PREFIX: "!", // Default prefix for the bot
-  SUPPORT_SERVER: "", // Your bot support server
+  OWNER_IDS: [548161806393147403], // Bot owner ID's
+  PREFIX: "w!", // Default prefix for the bot
+  SUPPORT_SERVER: "https://discord.gg/thesithorder", // Your bot support server
   PRESENCE: {
     ENABLED: true, // Whether or not the bot should update its status
     STATUS: "online", // The bot's status [online, idle, dnd, invisible]
@@ -10,15 +10,15 @@ module.exports = {
   },
   DASHBOARD: {
     enabled: false, // enable or disable dashboard
-    baseURL: "http://localhost:8080", // base url
-    failureURL: "http://localhost:8080", // failure redirect url
+    baseURL: "https://automod-bot.rollviral.repl.co", // base url
+    failureURL: "https://automod-bot.rollviral.repl.co/api/callback", // failure redirect url
     port: "8080", // port to run the bot on
   },
   INTERACTIONS: {
     SLASH: false, // Should the interactions be enabled
     CONTEXT: false, // Should contexts be enabled
-    GLOBAL: false, // Should the interactions be registered globally
-    TEST_GUILD_ID: "xxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
+    GLOBAL: true, // Should the interactions be registered globally
+    TEST_GUILD_ID: "1016874781498425346", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   XP_SYSTEM: {
     COOLDOWN: 5, // Cooldown in seconds between messages
@@ -93,3 +93,4 @@ MUSIC: {
     API_ERROR: "Unexpected Backend Error! Try again later or contact support server",
   },
 };
+
